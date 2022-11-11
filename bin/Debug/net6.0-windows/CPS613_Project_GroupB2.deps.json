@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CPS613_Project_GroupB2/1.0.0": {
+        "runtime": {
+          "CPS613_Project_GroupB2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CPS613_Project_GroupB2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
