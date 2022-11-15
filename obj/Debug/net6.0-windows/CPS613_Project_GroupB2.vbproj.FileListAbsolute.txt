@@ -15,3 +15,4 @@ H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\refint\CPS613_Project_
 H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.pdb
 H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.genruntimeconfig.cache
 H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\ref\CPS613_Project_GroupB2.dll
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.Foyer.resources
