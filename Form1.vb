@@ -1,6 +1,4 @@
-﻿Imports System.Timers
-
-Public Class Form1
+﻿Public Class Form1
 
     ' This section of Code handles the scanning activity
     ' Adjust it so all of your buttons are listed in Form1_Load in the order you want to scan through them
