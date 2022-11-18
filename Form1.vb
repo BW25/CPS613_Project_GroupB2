@@ -61,6 +61,7 @@
         End If
     End Sub
 
+<<<<<<< HEAD
     Private Sub CallAssistBtn_Click(sender As Object, e As EventArgs) Handles CallAssistBtn.Click
         If Not HasTicked Then
             If CallAssistBtn.Tag = 1 Then
@@ -84,5 +85,10 @@
 
     Private Sub ControlAptBtn_Click(sender As Object, e As EventArgs) Handles ControlAptBtn.Click
 
+=======
+    Private Sub ControlAptBtn_Click(sender As Object, e As EventArgs) Handles ControlAptBtn.Click
+        ControlApartment.Show()
+        'Close()
+>>>>>>> a287ab40d397a626d576df70b45797623313dbb6
     End Sub
 End Class
