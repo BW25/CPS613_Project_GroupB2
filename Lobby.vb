@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Lobby
 
     ' This section of Code handles the scanning activity
     ' Adjust it so all of your buttons are listed in Form1_Load in the order you want to scan through them
@@ -22,8 +22,14 @@
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {Button1, Button2, Button3, ControlAptBtn, CallAssistBtn}
+        Buttons = {Front, ControlAptBtn, CallAssistBtn}
         SelectedButton = 0
+
+        CallE.Hide()
+        PictureBox2.Hide()
+
+
+
     End Sub
 
     'A key has been held for more 500msec
@@ -36,7 +42,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Button1.KeyUp, Button2.KeyUp, Button3.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Front.KeyUp, CallE.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -48,18 +54,33 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Button1.KeyDown, Button2.KeyDown, Button3.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Front.KeyDown, CallE.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+
         Timer1.Start()
     End Sub
 
     ' TODO: This is a template of how to implement a button click
     ' Be sure all code is inside the If statement given to differentiate between scanning and clicking
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Front.Click
+        If Not HasTicked Then
+            Front.Text = "Front Door Open"
+            Buttons = {CallE, ControlAptBtn, CallAssistBtn}
+            CallE.Show()
+            PictureBox2.Show()
+            SelectedButton = 0
+            Buttons(SelectedButton).Focus()
+        End If
+    End Sub
+
+
+
+    Private Sub CallE_Click(sender As Object, e As EventArgs) Handles CallE.Click
         If Not HasTicked Then
             Buttons(SelectedButton).Text = "Button Clicked"
-            Lobby.Show()
+            Elevator.Show()
 
         End If
     End Sub
+
 
 End Class
