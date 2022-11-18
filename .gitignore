@@ -1,6 +1,9 @@
 # ignore ALL files with these extensions
-.vs
+.vs/
+.vs/*
 bin/
+bin/*
 obj/
+obj/*
 CPS613_Project_GroupB2.vbproj.user
 CPS613_B2.zip

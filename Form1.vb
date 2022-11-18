@@ -19,7 +19,6 @@
         ' Set up timer to go off when a button is held for half a second
         Timer1.Interval = 500
         Timer1.Stop()
-        CallAssistBtn.Tag = 1
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
         Buttons = {Button1, Button2, Button3, ControlAptBtn, CallAssistBtn}
@@ -63,27 +62,27 @@
     End Sub
 
     Private Sub CallAssistBtn_Click(sender As Object, e As EventArgs) Handles CallAssistBtn.Click
-
-        If CallAssistBtn.Tag = 1 Then
-            CallAssistBtn.BackColor = Color.Red
-            CallAssistBtn.Tag = 0
-            NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST SENT"
-            NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
-            NotifyIcon1.Visible = True
-            NotifyIcon1.ShowBalloonTip(0)
-        Else
-            CallAssistBtn.BackColor = Color.White
-            CallAssistBtn.Tag = 1
-            NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST CANCELED"
-            NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
-            NotifyIcon1.Visible = True
-            NotifyIcon1.ShowBalloonTip(0)
+        If Not HasTicked Then
+            If CallAssistBtn.Tag = 1 Then
+                CallAssistBtn.BackColor = Color.Red
+                CallAssistBtn.Tag = 0
+                NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST SENT"
+                NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
+                NotifyIcon1.Visible = True
+                NotifyIcon1.ShowBalloonTip(0)
+            Else
+                CallAssistBtn.BackColor = System.Drawing.SystemColors.Control
+                CallAssistBtn.Tag = 1
+                NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST CANCELED"
+                NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
+                NotifyIcon1.Visible = True
+                NotifyIcon1.ShowBalloonTip(0)
+            End If
         End If
-
 
     End Sub
 
     Private Sub ControlAptBtn_Click(sender As Object, e As EventArgs) Handles ControlAptBtn.Click
-        doorbell.Show()
+
     End Sub
 End Class
