@@ -1,0 +1,17 @@
+H:\cps613\CPS613_Project_GroupB2\bin\Debug\net6.0-windows\CPS613_Project_GroupB2.exe
+H:\cps613\CPS613_Project_GroupB2\bin\Debug\net6.0-windows\CPS613_Project_GroupB2.deps.json
+H:\cps613\CPS613_Project_GroupB2\bin\Debug\net6.0-windows\CPS613_Project_GroupB2.runtimeconfig.json
+H:\cps613\CPS613_Project_GroupB2\bin\Debug\net6.0-windows\CPS613_Project_GroupB2.dll
+H:\cps613\CPS613_Project_GroupB2\bin\Debug\net6.0-windows\CPS613_Project_GroupB2.pdb
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.vbproj.AssemblyReference.cache
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.Form1.resources
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.vbproj.GenerateResource.cache
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.GeneratedMSBuildEditorConfig.editorconfig
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.AssemblyInfoInputs.cache
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.AssemblyInfo.vb
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.vbproj.CoreCompileInputs.cache
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.dll
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\refint\CPS613_Project_GroupB2.dll
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.pdb
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\CPS613_Project_GroupB2.genruntimeconfig.cache
+H:\cps613\CPS613_Project_GroupB2\obj\Debug\net6.0-windows\ref\CPS613_Project_GroupB2.dll
