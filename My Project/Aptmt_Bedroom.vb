@@ -1,5 +1,4 @@
-﻿Public Class Form1
-
+﻿Public Class Aptmt_Bedroom
     ' This section of Code handles the scanning activity
     ' Adjust it so all of your buttons are listed in Form1_Load in the order you want to scan through them
     ' TODO: Add handlers for each button.Click- This is what happens when space is tapped over the button
@@ -19,10 +18,10 @@
         ' Set up timer to go off when a button is held for half a second
         Timer1.Interval = 500
         Timer1.Stop()
-        CallAssistBtn.Tag = 1
+
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {Button1, Button2, Button3, ControlAptBtn, CallAssistBtn}
+        Buttons = {LightsBtn, WindowsBtn, BlindsBtn, EntranceBtn, KitchenBtn, ControlAptBtn, CallAssistBtn}
         SelectedButton = 0
     End Sub
 
@@ -36,7 +35,8 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Button1.KeyUp, Button2.KeyUp, Button3.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyUp, WindowsBtn.KeyUp, BlindsBtn.KeyUp, EntranceBtn.KeyUp, KitchenBtn.KeyUp,
+        ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -48,42 +48,50 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Button1.KeyDown, Button2.KeyDown, Button3.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyDown, WindowsBtn.KeyDown, BlindsBtn.KeyDown, EntranceBtn.KeyDown, KitchenBtn.KeyDown,
+        ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+
         Timer1.Start()
     End Sub
 
     ' TODO: This is a template of how to implement a button click
     ' Be sure all code is inside the If statement given to differentiate between scanning and clicking
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub LightsBtn_Click(sender As Object, e As EventArgs) Handles LightsBtn.Click
+        If Not HasTicked Then
+            If LightsBtn.Text = "Lights- (Off)" Then
+                LightsBtn.Text = "Lights- (On)"
+            Else
+                LightsBtn.Text = "Lights- (Off)"
+            End If
+        End If
+    End Sub
+
+    Private Sub WindowsBtn_Click(sender As Object, e As EventArgs) Handles WindowsBtn.Click
+        If Not HasTicked Then
+            If WindowsBtn.Text = "Windows- (Closed)" Then
+                WindowsBtn.Text = "Windows- (Open)"
+            Else
+                WindowsBtn.Text = "Windows- (Closed)"
+            End If
+        End If
+    End Sub
+
+    Private Sub BlindsBtn_Click(sender As Object, e As EventArgs) Handles BlindsBtn.Click
+        If Not HasTicked Then
+            ' TODO: Add Ranit's Popup to make doorbell ring
+            If BlindsBtn.Text = "Blinds- (Closed)" Then
+                BlindsBtn.Text = "Blinds- (Open)"
+            Else
+                BlindsBtn.Text = "Blinds- (Closed)"
+            End If
+        End If
+    End Sub
+
+    Private Sub EntranceBtn_Click(sender As Object, e As EventArgs) Handles EntranceBtn.Click
         If Not HasTicked Then
             Dim entranceForm = New Aptmt_Entrance
             entranceForm.Show()
             Me.Close()
         End If
-    End Sub
-
-    Private Sub CallAssistBtn_Click(sender As Object, e As EventArgs) Handles CallAssistBtn.Click
-
-        If CallAssistBtn.Tag = 1 Then
-            CallAssistBtn.BackColor = Color.Red
-            CallAssistBtn.Tag = 0
-            NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST SENT"
-            NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
-            NotifyIcon1.Visible = True
-            NotifyIcon1.ShowBalloonTip(0)
-        Else
-            CallAssistBtn.BackColor = Color.White
-            CallAssistBtn.Tag = 1
-            NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST CANCELED"
-            NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
-            NotifyIcon1.Visible = True
-            NotifyIcon1.ShowBalloonTip(0)
-        End If
-
-
-    End Sub
-
-    Private Sub ControlAptBtn_Click(sender As Object, e As EventArgs) Handles ControlAptBtn.Click
-        doorbell.Show()
     End Sub
 End Class
