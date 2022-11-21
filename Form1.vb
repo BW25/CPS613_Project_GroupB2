@@ -21,7 +21,7 @@
         Timer1.Stop()
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {Button1, Button2, Button3, ControlAptBtn, CallAssistBtn}
+        Buttons = {Aparment, Button2, ControlAptBtn, CallAssistBtn}
         SelectedButton = 0
     End Sub
 
@@ -35,7 +35,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Button1.KeyUp, Button2.KeyUp, Button3.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Aparment.KeyUp, Button2.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -47,13 +47,13 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Button1.KeyDown, Button2.KeyDown, Button3.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Aparment.KeyDown, Button2.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
         Timer1.Start()
     End Sub
 
     ' TODO: This is a template of how to implement a button click
     ' Be sure all code is inside the If statement given to differentiate between scanning and clicking
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Aparment.Click
         If Not HasTicked Then
             Dim entranceForm = New Aptmt_Entrance
             entranceForm.Show()
@@ -86,4 +86,12 @@
         ControlApartment.Show()
         Close()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If Not HasTicked Then
+            Lobby.Show()
+            Close()
+        End If
+    End Sub
+
 End Class

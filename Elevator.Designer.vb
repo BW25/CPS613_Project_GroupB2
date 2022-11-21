@@ -24,7 +24,6 @@ Partial Class Elevator
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Elevator))
-        Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.LobbyB = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -46,18 +45,6 @@ Partial Class Elevator
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ControlAptBtn
-        '
-        Me.ControlAptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ControlAptBtn.Location = New System.Drawing.Point(-1, 335)
-        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ControlAptBtn.Name = "ControlAptBtn"
-        Me.ControlAptBtn.Size = New System.Drawing.Size(340, 40)
-        Me.ControlAptBtn.TabIndex = 23
-        Me.ControlAptBtn.Text = "Control Apartment >"
-        Me.ControlAptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ControlAptBtn.UseVisualStyleBackColor = True
-        '
         'CallAssistBtn
         '
         Me.CallAssistBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -78,17 +65,19 @@ Partial Class Elevator
         Me.LobbyB.Name = "LobbyB"
         Me.LobbyB.Size = New System.Drawing.Size(300, 40)
         Me.LobbyB.TabIndex = 19
-        Me.LobbyB.Text = "Floor 1"
+        Me.LobbyB.Text = "Lobby"
         Me.LobbyB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.LobbyB.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._1
         Me.PictureBox1.Location = New System.Drawing.Point(-1, 40)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
@@ -121,10 +110,12 @@ Partial Class Elevator
         'PictureBox6
         '
         Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox6.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._5
         Me.PictureBox6.Location = New System.Drawing.Point(-1, 200)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 36
         Me.PictureBox6.TabStop = False
         '
@@ -143,10 +134,12 @@ Partial Class Elevator
         'PictureBox5
         '
         Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox5.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._4
         Me.PictureBox5.Location = New System.Drawing.Point(-1, 160)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 34
         Me.PictureBox5.TabStop = False
         '
@@ -165,10 +158,12 @@ Partial Class Elevator
         'PictureBox4
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox4.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._3
         Me.PictureBox4.Location = New System.Drawing.Point(-1, 120)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 32
         Me.PictureBox4.TabStop = False
         '
@@ -187,10 +182,12 @@ Partial Class Elevator
         'PictureBox3
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox3.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._2
         Me.PictureBox3.Location = New System.Drawing.Point(-1, 80)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 30
         Me.PictureBox3.TabStop = False
         '
@@ -213,7 +210,6 @@ Partial Class Elevator
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.F2)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.ControlAptBtn)
         Me.Controls.Add(Me.CallAssistBtn)
         Me.Controls.Add(Me.LobbyB)
         Me.Controls.Add(Me.PictureBox1)
@@ -229,8 +225,6 @@ Partial Class Elevator
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents ControlAptBtn As Button
     Friend WithEvents CallAssistBtn As Button
     Friend WithEvents LobbyB As Button
     Friend WithEvents PictureBox1 As PictureBox

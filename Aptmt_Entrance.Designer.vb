@@ -40,19 +40,23 @@ Partial Class Aptmt_Entrance
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.FloorBtn = New System.Windows.Forms.Button()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ControlAptBtn
         '
         Me.ControlAptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ControlAptBtn.Location = New System.Drawing.Point(0, 447)
+        Me.ControlAptBtn.Location = New System.Drawing.Point(0, 335)
+        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ControlAptBtn.Name = "ControlAptBtn"
-        Me.ControlAptBtn.Size = New System.Drawing.Size(389, 53)
+        Me.ControlAptBtn.Size = New System.Drawing.Size(340, 40)
         Me.ControlAptBtn.TabIndex = 23
         Me.ControlAptBtn.Text = "Control Apartment >"
         Me.ControlAptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -61,9 +65,10 @@ Partial Class Aptmt_Entrance
         'CallAssistBtn
         '
         Me.CallAssistBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 500)
+        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 375)
+        Me.CallAssistBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CallAssistBtn.Name = "CallAssistBtn"
-        Me.CallAssistBtn.Size = New System.Drawing.Size(389, 53)
+        Me.CallAssistBtn.Size = New System.Drawing.Size(340, 40)
         Me.CallAssistBtn.TabIndex = 22
         Me.CallAssistBtn.Tag = "1"
         Me.CallAssistBtn.Text = "Call For Assistance"
@@ -73,9 +78,10 @@ Partial Class Aptmt_Entrance
         'BlindsBtn
         '
         Me.BlindsBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BlindsBtn.Location = New System.Drawing.Point(46, 160)
+        Me.BlindsBtn.Location = New System.Drawing.Point(40, 120)
+        Me.BlindsBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BlindsBtn.Name = "BlindsBtn"
-        Me.BlindsBtn.Size = New System.Drawing.Size(343, 53)
+        Me.BlindsBtn.Size = New System.Drawing.Size(300, 40)
         Me.BlindsBtn.TabIndex = 21
         Me.BlindsBtn.Tag = "Blinds"
         Me.BlindsBtn.Text = "Blinds- (Closed)"
@@ -85,9 +91,10 @@ Partial Class Aptmt_Entrance
         'WindowsBtn
         '
         Me.WindowsBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.WindowsBtn.Location = New System.Drawing.Point(46, 107)
+        Me.WindowsBtn.Location = New System.Drawing.Point(40, 80)
+        Me.WindowsBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WindowsBtn.Name = "WindowsBtn"
-        Me.WindowsBtn.Size = New System.Drawing.Size(343, 53)
+        Me.WindowsBtn.Size = New System.Drawing.Size(300, 40)
         Me.WindowsBtn.TabIndex = 20
         Me.WindowsBtn.Tag = "Windows"
         Me.WindowsBtn.Text = "Windows- (Closed)"
@@ -97,9 +104,10 @@ Partial Class Aptmt_Entrance
         'LightsBtn
         '
         Me.LightsBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LightsBtn.Location = New System.Drawing.Point(46, 53)
+        Me.LightsBtn.Location = New System.Drawing.Point(40, 40)
+        Me.LightsBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LightsBtn.Name = "LightsBtn"
-        Me.LightsBtn.Size = New System.Drawing.Size(343, 53)
+        Me.LightsBtn.Size = New System.Drawing.Size(300, 40)
         Me.LightsBtn.TabIndex = 19
         Me.LightsBtn.Tag = "Lights"
         Me.LightsBtn.Text = "Lights- (Off)"
@@ -110,9 +118,10 @@ Partial Class Aptmt_Entrance
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.blinds_icon
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 160)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 120)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(45, 53)
+        Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 18
         Me.PictureBox3.TabStop = False
@@ -121,9 +130,9 @@ Partial Class Aptmt_Entrance
         '
         Me.Title2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Title2.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Title2.Location = New System.Drawing.Point(0, 227)
+        Me.Title2.Location = New System.Drawing.Point(0, 170)
         Me.Title2.Name = "Title2"
-        Me.Title2.Size = New System.Drawing.Size(388, 53)
+        Me.Title2.Size = New System.Drawing.Size(340, 40)
         Me.Title2.TabIndex = 17
         Me.Title2.Text = "Navigate To:"
         Me.Title2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -132,9 +141,10 @@ Partial Class Aptmt_Entrance
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.window_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 107)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 80)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 53)
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
@@ -143,9 +153,10 @@ Partial Class Aptmt_Entrance
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.lights_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 53)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 40)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(45, 53)
+        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
@@ -156,7 +167,7 @@ Partial Class Aptmt_Entrance
         Me.Title.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Title.Location = New System.Drawing.Point(0, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(388, 53)
+        Me.Title.Size = New System.Drawing.Size(340, 40)
         Me.Title.TabIndex = 14
         Me.Title.Text = "Apartment 503 (Entrance)"
         Me.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -164,9 +175,10 @@ Partial Class Aptmt_Entrance
         'BedroomBtn
         '
         Me.BedroomBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BedroomBtn.Location = New System.Drawing.Point(46, 280)
+        Me.BedroomBtn.Location = New System.Drawing.Point(40, 210)
+        Me.BedroomBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BedroomBtn.Name = "BedroomBtn"
-        Me.BedroomBtn.Size = New System.Drawing.Size(343, 53)
+        Me.BedroomBtn.Size = New System.Drawing.Size(300, 40)
         Me.BedroomBtn.TabIndex = 25
         Me.BedroomBtn.Text = "Bedroom"
         Me.BedroomBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -176,9 +188,10 @@ Partial Class Aptmt_Entrance
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.bedroom_icon
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 280)
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 210)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(45, 53)
+        Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 24
         Me.PictureBox4.TabStop = False
@@ -186,9 +199,10 @@ Partial Class Aptmt_Entrance
         'KitchenBtn
         '
         Me.KitchenBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.KitchenBtn.Location = New System.Drawing.Point(46, 333)
+        Me.KitchenBtn.Location = New System.Drawing.Point(40, 250)
+        Me.KitchenBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.KitchenBtn.Name = "KitchenBtn"
-        Me.KitchenBtn.Size = New System.Drawing.Size(343, 53)
+        Me.KitchenBtn.Size = New System.Drawing.Size(300, 40)
         Me.KitchenBtn.TabIndex = 27
         Me.KitchenBtn.Text = "Kitchen"
         Me.KitchenBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -198,9 +212,10 @@ Partial Class Aptmt_Entrance
         '
         Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox5.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.kitchen_icon
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 333)
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 250)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(45, 53)
+        Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 26
         Me.PictureBox5.TabStop = False
@@ -214,11 +229,37 @@ Partial Class Aptmt_Entrance
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'FloorBtn
+        '
+        Me.FloorBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.FloorBtn.Location = New System.Drawing.Point(40, 290)
+        Me.FloorBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.FloorBtn.Name = "FloorBtn"
+        Me.FloorBtn.Size = New System.Drawing.Size(300, 40)
+        Me.FloorBtn.TabIndex = 29
+        Me.FloorBtn.Text = "Floor 5 Hallway"
+        Me.FloorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FloorBtn.UseVisualStyleBackColor = True
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox6.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.entrance_icon
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 290)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 28
+        Me.PictureBox6.TabStop = False
+        '
         'Aptmt_Entrance
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(387, 553)
+        Me.ClientSize = New System.Drawing.Size(339, 415)
+        Me.Controls.Add(Me.FloorBtn)
+        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.KitchenBtn)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.BedroomBtn)
@@ -233,14 +274,15 @@ Partial Class Aptmt_Entrance
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Title)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Aptmt_Entrance"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aptmt_Entrance"
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -261,4 +303,6 @@ Partial Class Aptmt_Entrance
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents FloorBtn As Button
+    Friend WithEvents PictureBox6 As PictureBox
 End Class

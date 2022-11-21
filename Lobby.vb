@@ -22,11 +22,11 @@
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {Front, ControlAptBtn, CallAssistBtn}
+        Buttons = {Front, CallAssistBtn}
         SelectedButton = 0
 
         CallE.Hide()
-        PictureBox2.Hide()
+        ElevatorIcon.Hide()
 
 
 
@@ -42,7 +42,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Front.KeyUp, CallE.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles Front.KeyUp, CallE.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -54,7 +54,7 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Front.KeyDown, CallE.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles Front.KeyDown, CallE.KeyDown, CallAssistBtn.KeyDown
 
         Timer1.Start()
     End Sub
@@ -64,9 +64,10 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Front.Click
         If Not HasTicked Then
             Front.Text = "Front Door Open"
-            Buttons = {CallE, ControlAptBtn, CallAssistBtn}
+            FrontIcon.Image = My.Resources.slidingopen
+            Buttons = {CallE, CallAssistBtn}
             CallE.Show()
-            PictureBox2.Show()
+            ElevatorIcon.Show()
             SelectedButton = 0
             Buttons(SelectedButton).Focus()
         End If
@@ -78,7 +79,7 @@
         If Not HasTicked Then
             Buttons(SelectedButton).Text = "Button Clicked"
             Elevator.Show()
-
+            Close()
         End If
     End Sub
 

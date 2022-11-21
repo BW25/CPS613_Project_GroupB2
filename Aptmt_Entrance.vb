@@ -23,7 +23,7 @@
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {LightsBtn, WindowsBtn, BlindsBtn, BedroomBtn, KitchenBtn, ControlAptBtn, CallAssistBtn}
+        Buttons = {LightsBtn, WindowsBtn, BlindsBtn, BedroomBtn, KitchenBtn, FloorBtn, ControlAptBtn, CallAssistBtn}
         SelectedButton = 0
     End Sub
 
@@ -37,8 +37,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyUp, WindowsBtn.KeyUp, BlindsBtn.KeyUp, BedroomBtn.KeyUp, KitchenBtn.KeyUp,
-        ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyUp, WindowsBtn.KeyUp, BlindsBtn.KeyUp, BedroomBtn.KeyUp, KitchenBtn.KeyUp, FloorBtn.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -50,8 +49,7 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyDown, WindowsBtn.KeyDown, BlindsBtn.KeyDown, BedroomBtn.KeyDown, KitchenBtn.KeyDown,
-        ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles LightsBtn.KeyDown, WindowsBtn.KeyDown, BlindsBtn.KeyDown, BedroomBtn.KeyDown, KitchenBtn.KeyDown, FloorBtn.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown
 
         Timer1.Start()
     End Sub
@@ -91,6 +89,7 @@
     Private Sub BedroomBtn_Click(sender As Object, e As EventArgs) Handles BedroomBtn.Click
         If Not HasTicked Then
             Dim bedroomForm = New Aptmt_Bedroom
+            bedroomForm.StartPosition = FormStartPosition.CenterScreen
             bedroomForm.Show()
             Me.Close()
         End If
@@ -117,4 +116,10 @@
 
     End Sub
 
+    Private Sub FloorBtn_Click(sender As Object, e As EventArgs) Handles FloorBtn.Click
+        If Not HasTicked Then
+            Floor5.Show()
+            Close()
+        End If
+    End Sub
 End Class

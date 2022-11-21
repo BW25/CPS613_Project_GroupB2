@@ -22,7 +22,7 @@
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {LobbyB, F2, F3, F4, F5, ControlAptBtn, CallAssistBtn}
+        Buttons = {LobbyB, F2, F3, F4, F5, CallAssistBtn}
         SelectedButton = 0
         Lobby.Close()
     End Sub
@@ -37,7 +37,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles LobbyB.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp, F2.KeyUp, F3.KeyUp, F4.KeyUp, F5.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles LobbyB.KeyUp, CallAssistBtn.KeyUp, F2.KeyUp, F3.KeyUp, F4.KeyUp, F5.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -49,7 +49,7 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles LobbyB.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown, F2.KeyDown, F3.KeyDown, F4.KeyDown, F5.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles LobbyB.KeyDown, CallAssistBtn.KeyDown, F2.KeyDown, F3.KeyDown, F4.KeyDown, F5.KeyDown
         Timer1.Start()
     End Sub
 
@@ -57,7 +57,8 @@
     ' Be sure all code is inside the If statement given to differentiate between scanning and clicking
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles LobbyB.Click
         If Not HasTicked Then
-            Buttons(SelectedButton).Text = "Dummy Button"
+            Lobby.Show()
+            Close()
 
         End If
     End Sub
@@ -109,4 +110,5 @@
             End If
         End If
     End Sub
+
 End Class

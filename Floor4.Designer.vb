@@ -24,37 +24,26 @@ Partial Class Floor4
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Floor4))
-        Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.RM401 = New System.Windows.Forms.Button()
         Me.CallE = New System.Windows.Forms.Button()
         Me.Pic401 = New System.Windows.Forms.PictureBox()
         Me.Room = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ElevatorIcon = New System.Windows.Forms.PictureBox()
         Me.Title = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.RM402 = New System.Windows.Forms.Button()
         Me.Pic402 = New System.Windows.Forms.PictureBox()
         Me.RM403 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Pic403 = New System.Windows.Forms.PictureBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.DisconnectBtn = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Pic401, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ElevatorIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pic402, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pic403, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ControlAptBtn
-        '
-        Me.ControlAptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ControlAptBtn.Location = New System.Drawing.Point(-1, 335)
-        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ControlAptBtn.Name = "ControlAptBtn"
-        Me.ControlAptBtn.Size = New System.Drawing.Size(340, 40)
-        Me.ControlAptBtn.TabIndex = 43
-        Me.ControlAptBtn.Text = "Control Apartment >"
-        Me.ControlAptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ControlAptBtn.UseVisualStyleBackColor = True
         '
         'CallAssistBtn
         '
@@ -95,10 +84,12 @@ Partial Class Floor4
         'Pic401
         '
         Me.Pic401.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Pic401.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.doorbell
         Me.Pic401.Location = New System.Drawing.Point(-1, 124)
         Me.Pic401.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pic401.Name = "Pic401"
         Me.Pic401.Size = New System.Drawing.Size(40, 40)
+        Me.Pic401.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Pic401.TabIndex = 38
         Me.Pic401.TabStop = False
         '
@@ -113,15 +104,17 @@ Partial Class Floor4
         Me.Room.Text = "Room"
         Me.Room.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
+        'ElevatorIcon
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, 40)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox1.TabIndex = 35
-        Me.PictureBox1.TabStop = False
+        Me.ElevatorIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ElevatorIcon.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.elevator
+        Me.ElevatorIcon.Location = New System.Drawing.Point(-1, 40)
+        Me.ElevatorIcon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ElevatorIcon.Name = "ElevatorIcon"
+        Me.ElevatorIcon.Size = New System.Drawing.Size(40, 40)
+        Me.ElevatorIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ElevatorIcon.TabIndex = 35
+        Me.ElevatorIcon.TabStop = False
         '
         'Title
         '
@@ -152,10 +145,12 @@ Partial Class Floor4
         'Pic402
         '
         Me.Pic402.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Pic402.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.doorbell
         Me.Pic402.Location = New System.Drawing.Point(-1, 167)
         Me.Pic402.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pic402.Name = "Pic402"
         Me.Pic402.Size = New System.Drawing.Size(40, 40)
+        Me.Pic402.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Pic402.TabIndex = 44
         Me.Pic402.TabStop = False
         '
@@ -171,13 +166,16 @@ Partial Class Floor4
         Me.RM403.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.RM403.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'Pic403
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
+        Me.Pic403.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Pic403.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.doorbell
+        Me.Pic403.Location = New System.Drawing.Point(-1, 211)
+        Me.Pic403.Name = "Pic403"
+        Me.Pic403.Size = New System.Drawing.Size(40, 40)
+        Me.Pic403.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Pic403.TabIndex = 0
+        Me.Pic403.TabStop = False
         '
         'NotifyIcon1
         '
@@ -185,46 +183,65 @@ Partial Class Floor4
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'DisconnectBtn
+        '
+        Me.DisconnectBtn.Location = New System.Drawing.Point(240, 211)
+        Me.DisconnectBtn.Name = "DisconnectBtn"
+        Me.DisconnectBtn.Size = New System.Drawing.Size(99, 40)
+        Me.DisconnectBtn.TabIndex = 48
+        Me.DisconnectBtn.Text = "Disconnect"
+        Me.DisconnectBtn.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(331, 315)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 49
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Floor4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(339, 415)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DisconnectBtn)
+        Me.Controls.Add(Me.Pic403)
         Me.Controls.Add(Me.RM403)
         Me.Controls.Add(Me.RM402)
         Me.Controls.Add(Me.Pic402)
-        Me.Controls.Add(Me.ControlAptBtn)
         Me.Controls.Add(Me.CallAssistBtn)
         Me.Controls.Add(Me.RM401)
         Me.Controls.Add(Me.CallE)
         Me.Controls.Add(Me.Pic401)
         Me.Controls.Add(Me.Room)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ElevatorIcon)
         Me.Controls.Add(Me.Title)
         Me.Name = "Floor4"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "  "
         CType(Me.Pic401, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ElevatorIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pic402, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pic403, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents ControlAptBtn As Button
     Friend WithEvents CallAssistBtn As Button
     Friend WithEvents RM401 As Button
     Friend WithEvents CallE As Button
     Friend WithEvents Pic401 As PictureBox
     Friend WithEvents Room As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ElevatorIcon As PictureBox
     Friend WithEvents Title As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents RM402 As Button
     Friend WithEvents Pic402 As PictureBox
     Friend WithEvents RM403 As Button
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Pic403 As PictureBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents DisconnectBtn As Button
+    Friend WithEvents Button1 As Button
 End Class

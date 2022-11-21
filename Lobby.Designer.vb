@@ -23,29 +23,17 @@ Partial Class Lobby
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.CallE = New System.Windows.Forms.Button()
         Me.Front = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ElevatorIcon = New System.Windows.Forms.PictureBox()
+        Me.FrontIcon = New System.Windows.Forms.PictureBox()
         Me.Title = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        CType(Me.ElevatorIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FrontIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ControlAptBtn
-        '
-        Me.ControlAptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ControlAptBtn.Location = New System.Drawing.Point(-1, 335)
-        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ControlAptBtn.Name = "ControlAptBtn"
-        Me.ControlAptBtn.Size = New System.Drawing.Size(340, 40)
-        Me.ControlAptBtn.TabIndex = 23
-        Me.ControlAptBtn.Text = "Control Apartment >"
-        Me.ControlAptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ControlAptBtn.UseVisualStyleBackColor = True
         '
         'CallAssistBtn
         '
@@ -83,7 +71,27 @@ Partial Class Lobby
         Me.Front.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Front.UseVisualStyleBackColor = True
         '
-
+        'ElevatorIcon
+        '
+        Me.ElevatorIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ElevatorIcon.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.elevator
+        Me.ElevatorIcon.Location = New System.Drawing.Point(0, 80)
+        Me.ElevatorIcon.Name = "ElevatorIcon"
+        Me.ElevatorIcon.Size = New System.Drawing.Size(40, 40)
+        Me.ElevatorIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ElevatorIcon.TabIndex = 24
+        Me.ElevatorIcon.TabStop = False
+        '
+        'FrontIcon
+        '
+        Me.FrontIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.FrontIcon.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.slidingclosed
+        Me.FrontIcon.Location = New System.Drawing.Point(0, 40)
+        Me.FrontIcon.Name = "FrontIcon"
+        Me.FrontIcon.Size = New System.Drawing.Size(40, 40)
+        Me.FrontIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.FrontIcon.TabIndex = 25
+        Me.FrontIcon.TabStop = False
         '
         'Title
         '
@@ -99,33 +107,36 @@ Partial Class Lobby
         'Timer1
         '
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Lobby
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(339, 415)
-        Me.Controls.Add(Me.ControlAptBtn)
         Me.Controls.Add(Me.CallAssistBtn)
         Me.Controls.Add(Me.CallE)
         Me.Controls.Add(Me.Front)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ElevatorIcon)
+        Me.Controls.Add(Me.FrontIcon)
         Me.Controls.Add(Me.Title)
         Me.Name = "Lobby"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lobby"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ElevatorIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FrontIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents ControlAptBtn As Button
     Friend WithEvents CallAssistBtn As Button
     Friend WithEvents CallE As Button
     Friend WithEvents Front As Button
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ElevatorIcon As PictureBox
+    Friend WithEvents FrontIcon As PictureBox
     Friend WithEvents Title As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

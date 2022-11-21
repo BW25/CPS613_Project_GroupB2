@@ -22,7 +22,7 @@
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {CallE, RM501, RM502, RM503, ControlAptBtn, CallAssistBtn}
+        Buttons = {CallE, RM501, RM502, RM503, CallAssistBtn}
         SelectedButton = 0
     End Sub
 
@@ -36,7 +36,7 @@
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles CallE.KeyUp, RM502.KeyUp, ControlAptBtn.KeyUp, CallAssistBtn.KeyUp, RM501.KeyUp, RM503.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles CallE.KeyUp, RM502.KeyUp, CallAssistBtn.KeyUp, RM501.KeyUp, RM503.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -48,7 +48,7 @@
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles CallE.KeyDown, RM502.KeyDown, ControlAptBtn.KeyDown, CallAssistBtn.KeyDown, RM501.KeyDown, RM503.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles CallE.KeyDown, RM502.KeyDown, CallAssistBtn.KeyDown, RM501.KeyDown, RM503.KeyDown
         Timer1.Start()
     End Sub
 
@@ -81,6 +81,13 @@
                 NotifyIcon1.Visible = True
                 NotifyIcon1.ShowBalloonTip(0)
             End If
+        End If
+    End Sub
+
+    Private Sub RM503_Click(sender As Object, e As EventArgs) Handles RM503.Click
+        If Not HasTicked Then
+            Aptmt_Entrance.Show()
+            Close()
         End If
     End Sub
 End Class
