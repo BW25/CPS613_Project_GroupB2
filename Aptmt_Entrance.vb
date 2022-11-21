@@ -88,10 +88,8 @@
 
     Private Sub BedroomBtn_Click(sender As Object, e As EventArgs) Handles BedroomBtn.Click
         If Not HasTicked Then
-            Dim bedroomForm = New Aptmt_Bedroom
-            bedroomForm.StartPosition = FormStartPosition.CenterScreen
-            bedroomForm.Show()
-            Me.Close()
+            Bedroom.Show()
+            Close()
         End If
     End Sub
 
@@ -120,6 +118,12 @@
         If Not HasTicked Then
             Floor5.Show()
             Close()
+        End If
+    End Sub
+
+    Private Sub ControlAptBtn_Click(sender As Object, e As EventArgs) Handles ControlAptBtn.Click
+        If Not HasTicked Then
+            ControlApartment.Show()
         End If
     End Sub
 End Class

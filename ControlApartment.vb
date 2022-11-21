@@ -86,7 +86,7 @@ Public Class ControlApartment
         End If
     End Sub
 
-    Private Sub BedroomBtn_Click(sender As Object, e As EventArgs) Handles BedroomBtn.Click, KitchenBtn.Click
+    Private Sub BedroomBtn_Click(sender As Object, e As EventArgs) Handles BedroomBtn.Click
         If Not HasTicked Then
             Bedroom.Show()
             Close()
@@ -94,9 +94,7 @@ Public Class ControlApartment
     End Sub
 
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
-        Form1.Show()
-        Me.Hide()
-
+        Close()
     End Sub
 
     Private Sub CallAssistBtn_Click(sender As Object, e As EventArgs) Handles CallAssistBtn.Click
