@@ -169,17 +169,6 @@ Partial Class Floor4
         Me.RM403.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.RM403.UseVisualStyleBackColor = True
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.doorbell
-        Me.PictureBox2.Location = New System.Drawing.Point(-1, 211)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 48
-        Me.PictureBox2.TabStop = False
         '
         'Floor4
         '
