@@ -83,27 +83,7 @@ Partial Class Lobby
         Me.Front.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Front.UseVisualStyleBackColor = True
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.red
-        Me.PictureBox2.Location = New System.Drawing.Point(-1, 80)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox2.TabIndex = 16
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.red
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, 40)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox1.TabIndex = 15
-        Me.PictureBox1.TabStop = False
+
         '
         'Title
         '
