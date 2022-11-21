@@ -23,6 +23,7 @@ Partial Class Floor4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Floor4))
         Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.RM401 = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class Floor4
         Me.Pic402 = New System.Windows.Forms.PictureBox()
         Me.RM403 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.Pic401, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pic402, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,6 +171,19 @@ Partial Class Floor4
         Me.RM403.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.RM403.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
         '
         'Floor4
         '
@@ -211,4 +226,5 @@ Partial Class Floor4
     Friend WithEvents Pic402 As PictureBox
     Friend WithEvents RM403 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

@@ -23,6 +23,7 @@ Partial Class Elevator
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Elevator))
         Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.LobbyB = New System.Windows.Forms.Button()
@@ -37,6 +38,7 @@ Partial Class Elevator
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.F2 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -192,6 +194,12 @@ Partial Class Elevator
         Me.PictureBox3.TabIndex = 30
         Me.PictureBox3.TabStop = False
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Elevator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -236,4 +244,5 @@ Partial Class Elevator
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents F2 As Button
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

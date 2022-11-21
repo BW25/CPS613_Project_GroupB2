@@ -93,4 +93,29 @@ Public Class ControlApartment
         End If
     End Sub
 
+    Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
+        Form1.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub CallAssistBtn_Click(sender As Object, e As EventArgs) Handles CallAssistBtn.Click
+        If Not HasTicked Then
+            If CallAssistBtn.Tag = 1 Then
+                CallAssistBtn.BackColor = Color.Red
+                CallAssistBtn.Tag = 0
+                NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST SENT"
+                NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
+                NotifyIcon1.Visible = True
+                NotifyIcon1.ShowBalloonTip(0)
+            Else
+                CallAssistBtn.BackColor = System.Drawing.SystemColors.Control
+                CallAssistBtn.Tag = 1
+                NotifyIcon1.BalloonTipText = "ASSISTANCE REQUEST CANCELED"
+                NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
+                NotifyIcon1.Visible = True
+                NotifyIcon1.ShowBalloonTip(0)
+            End If
+        End If
+    End Sub
 End Class

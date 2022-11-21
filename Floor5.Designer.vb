@@ -23,6 +23,7 @@ Partial Class Floor5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Floor5))
         Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
         Me.RM502 = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class Floor5
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.RM503 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,6 +181,12 @@ Partial Class Floor5
         Me.PictureBox4.TabIndex = 36
         Me.PictureBox4.TabStop = False
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Floor5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -220,4 +228,5 @@ Partial Class Floor5
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents RM503 As Button
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

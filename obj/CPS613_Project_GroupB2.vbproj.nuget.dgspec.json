@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kyle_\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj": {}
+    "C:\\Users\\ranit\\OneDrive\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\kyle_\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj": {
+    "C:\\Users\\ranit\\OneDrive\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kyle_\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj",
+        "projectUniqueName": "C:\\Users\\ranit\\OneDrive\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj",
         "projectName": "CPS613_Project_GroupB2",
-        "projectPath": "C:\\Users\\kyle_\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj",
-        "packagesPath": "C:\\Users\\kyle_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kyle_\\Documents\\GitHub\\CPS613_Project_GroupB2\\obj\\",
+        "projectPath": "C:\\Users\\ranit\\OneDrive\\Documents\\GitHub\\CPS613_Project_GroupB2\\CPS613_Project_GroupB2.vbproj",
+        "packagesPath": "C:\\Users\\ranit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ranit\\OneDrive\\Documents\\GitHub\\CPS613_Project_GroupB2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kyle_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ranit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

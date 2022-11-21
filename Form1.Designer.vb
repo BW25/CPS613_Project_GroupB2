@@ -179,6 +179,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Title)
+        Me.Location = New System.Drawing.Point(39, 334)
         Me.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
