@@ -72,7 +72,7 @@ Partial Class Elevator
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources._1
+        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.lobby
         Me.PictureBox1.Location = New System.Drawing.Point(-1, 40)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
