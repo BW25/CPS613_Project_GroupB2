@@ -23,6 +23,7 @@ Partial Class Bedroom
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bedroom))
         Me.Title = New System.Windows.Forms.Label()
         Me.ControlAptBtn = New System.Windows.Forms.Button()
         Me.CallAssistBtn = New System.Windows.Forms.Button()
@@ -138,6 +139,7 @@ Partial Class Bedroom
         '
         'NotifyIcon1
         '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
@@ -272,7 +274,7 @@ Partial Class Bedroom
         Me.Controls.Add(Me.ControlAptBtn)
         Me.Controls.Add(Me.CallAssistBtn)
         Me.Controls.Add(Me.Title)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Bedroom"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bedroom"
