@@ -42,9 +42,9 @@ Partial Class Form1
         Me.Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Title.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Title.Location = New System.Drawing.Point(0, 0)
-        Me.Title.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Title.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(340, 40)
+        Me.Title.Size = New System.Drawing.Size(485, 65)
         Me.Title.TabIndex = 0
         Me.Title.Text = "Start"
         Me.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -52,11 +52,11 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.bed
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 40)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.apartment
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 67)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox1.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -65,10 +65,10 @@ Partial Class Form1
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.lobby
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 80)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 133)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox2.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
@@ -76,10 +76,10 @@ Partial Class Form1
         'Aparment
         '
         Me.Aparment.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Aparment.Location = New System.Drawing.Point(40, 40)
-        Me.Aparment.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Aparment.Location = New System.Drawing.Point(57, 67)
+        Me.Aparment.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Aparment.Name = "Aparment"
-        Me.Aparment.Size = New System.Drawing.Size(300, 40)
+        Me.Aparment.Size = New System.Drawing.Size(429, 67)
         Me.Aparment.TabIndex = 9
         Me.Aparment.Text = "Apartment"
         Me.Aparment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -88,10 +88,10 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(40, 80)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Location = New System.Drawing.Point(57, 133)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(300, 40)
+        Me.Button2.Size = New System.Drawing.Size(429, 67)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Lobby"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -100,10 +100,10 @@ Partial Class Form1
         'CallAssistBtn
         '
         Me.CallAssistBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 375)
-        Me.CallAssistBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 625)
+        Me.CallAssistBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CallAssistBtn.Name = "CallAssistBtn"
-        Me.CallAssistBtn.Size = New System.Drawing.Size(340, 40)
+        Me.CallAssistBtn.Size = New System.Drawing.Size(486, 67)
         Me.CallAssistBtn.TabIndex = 12
         Me.CallAssistBtn.Tag = "1"
         Me.CallAssistBtn.Text = "Call For Assistance"
@@ -113,10 +113,10 @@ Partial Class Form1
         'ControlAptBtn
         '
         Me.ControlAptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ControlAptBtn.Location = New System.Drawing.Point(0, 335)
-        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ControlAptBtn.Location = New System.Drawing.Point(0, 558)
+        Me.ControlAptBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.ControlAptBtn.Name = "ControlAptBtn"
-        Me.ControlAptBtn.Size = New System.Drawing.Size(340, 40)
+        Me.ControlAptBtn.Size = New System.Drawing.Size(486, 67)
         Me.ControlAptBtn.TabIndex = 13
         Me.ControlAptBtn.Text = "Control Apartment >"
         Me.ControlAptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -133,9 +133,9 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(339, 415)
+        Me.ClientSize = New System.Drawing.Size(484, 692)
         Me.Controls.Add(Me.ControlAptBtn)
         Me.Controls.Add(Me.CallAssistBtn)
         Me.Controls.Add(Me.Button2)
@@ -144,7 +144,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Title)
         Me.Location = New System.Drawing.Point(39, 334)
-        Me.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

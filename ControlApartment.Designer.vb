@@ -44,12 +44,15 @@ Partial Class ControlApartment
         Me.DecTempBtn = New System.Windows.Forms.Button()
         Me.TempLabel = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.AptBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Title
@@ -57,8 +60,9 @@ Partial Class ControlApartment
         Me.Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Title.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Title.Location = New System.Drawing.Point(0, 0)
+        Me.Title.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(340, 40)
+        Me.Title.Size = New System.Drawing.Size(485, 65)
         Me.Title.TabIndex = 1
         Me.Title.Text = "Control Apartment"
         Me.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -66,11 +70,11 @@ Partial Class ControlApartment
         'HumidityBtn
         '
         Me.HumidityBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.HumidityBtn.Location = New System.Drawing.Point(39, 80)
-        Me.HumidityBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.HumidityBtn.Location = New System.Drawing.Point(56, 133)
+        Me.HumidityBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.HumidityBtn.Name = "HumidityBtn"
-        Me.HumidityBtn.Size = New System.Drawing.Size(300, 40)
-        Me.HumidityBtn.TabIndex = 14
+        Me.HumidityBtn.Size = New System.Drawing.Size(429, 67)
+        Me.HumidityBtn.TabIndex = 3
         Me.HumidityBtn.Text = "Humidity- (Off)"
         Me.HumidityBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HumidityBtn.UseVisualStyleBackColor = True
@@ -78,10 +82,10 @@ Partial Class ControlApartment
         'TempBtn
         '
         Me.TempBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TempBtn.Location = New System.Drawing.Point(39, 41)
-        Me.TempBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TempBtn.Location = New System.Drawing.Point(56, 68)
+        Me.TempBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TempBtn.Name = "TempBtn"
-        Me.TempBtn.Size = New System.Drawing.Size(300, 40)
+        Me.TempBtn.Size = New System.Drawing.Size(429, 67)
         Me.TempBtn.TabIndex = 1000
         Me.TempBtn.Text = "Temperature-        °C"
         Me.TempBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -92,10 +96,10 @@ Partial Class ControlApartment
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.humidity
-        Me.PictureBox2.Location = New System.Drawing.Point(-1, 80)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox2.Location = New System.Drawing.Point(-1, 133)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox2.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 12
         Me.PictureBox2.TabStop = False
@@ -105,10 +109,10 @@ Partial Class ControlApartment
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.temperature
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, 41)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 68)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox1.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
@@ -118,10 +122,10 @@ Partial Class ControlApartment
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.fan
-        Me.PictureBox3.Location = New System.Drawing.Point(-1, 120)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox3.Location = New System.Drawing.Point(-1, 199)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox3.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 12
         Me.PictureBox3.TabStop = False
@@ -129,11 +133,11 @@ Partial Class ControlApartment
         'FanBtn
         '
         Me.FanBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FanBtn.Location = New System.Drawing.Point(39, 120)
-        Me.FanBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.FanBtn.Location = New System.Drawing.Point(56, 199)
+        Me.FanBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.FanBtn.Name = "FanBtn"
-        Me.FanBtn.Size = New System.Drawing.Size(300, 40)
-        Me.FanBtn.TabIndex = 14
+        Me.FanBtn.Size = New System.Drawing.Size(429, 67)
+        Me.FanBtn.TabIndex = 4
         Me.FanBtn.Text = "Fans- (On)"
         Me.FanBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FanBtn.UseVisualStyleBackColor = True
@@ -141,11 +145,11 @@ Partial Class ControlApartment
         'BedroomBtn
         '
         Me.BedroomBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BedroomBtn.Location = New System.Drawing.Point(39, 208)
-        Me.BedroomBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BedroomBtn.Location = New System.Drawing.Point(56, 406)
+        Me.BedroomBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.BedroomBtn.Name = "BedroomBtn"
-        Me.BedroomBtn.Size = New System.Drawing.Size(300, 40)
-        Me.BedroomBtn.TabIndex = 17
+        Me.BedroomBtn.Size = New System.Drawing.Size(429, 68)
+        Me.BedroomBtn.TabIndex = 6
         Me.BedroomBtn.Text = "Bedroom"
         Me.BedroomBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BedroomBtn.UseVisualStyleBackColor = True
@@ -155,10 +159,10 @@ Partial Class ControlApartment
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.bed
-        Me.PictureBox4.Location = New System.Drawing.Point(-1, 208)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox4.Location = New System.Drawing.Point(1, 406)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox4.Size = New System.Drawing.Size(56, 66)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 16
         Me.PictureBox4.TabStop = False
@@ -167,9 +171,10 @@ Partial Class ControlApartment
         '
         Me.Title2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Title2.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Title2.Location = New System.Drawing.Point(-1, 168)
+        Me.Title2.Location = New System.Drawing.Point(1, 339)
+        Me.Title2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Title2.Name = "Title2"
-        Me.Title2.Size = New System.Drawing.Size(340, 40)
+        Me.Title2.Size = New System.Drawing.Size(485, 66)
         Me.Title2.TabIndex = 15
         Me.Title2.Text = "Navigate To:"
         Me.Title2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -177,11 +182,11 @@ Partial Class ControlApartment
         'BackBtn
         '
         Me.BackBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BackBtn.Location = New System.Drawing.Point(39, 334)
-        Me.BackBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BackBtn.Location = New System.Drawing.Point(56, 557)
+        Me.BackBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.BackBtn.Name = "BackBtn"
-        Me.BackBtn.Size = New System.Drawing.Size(301, 41)
-        Me.BackBtn.TabIndex = 19
+        Me.BackBtn.Size = New System.Drawing.Size(430, 68)
+        Me.BackBtn.TabIndex = 8
         Me.BackBtn.Text = "Back"
         Me.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BackBtn.UseVisualStyleBackColor = True
@@ -189,11 +194,11 @@ Partial Class ControlApartment
         'CallAssistBtn
         '
         Me.CallAssistBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 374)
-        Me.CallAssistBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CallAssistBtn.Location = New System.Drawing.Point(0, 623)
+        Me.CallAssistBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CallAssistBtn.Name = "CallAssistBtn"
-        Me.CallAssistBtn.Size = New System.Drawing.Size(340, 41)
-        Me.CallAssistBtn.TabIndex = 18
+        Me.CallAssistBtn.Size = New System.Drawing.Size(486, 68)
+        Me.CallAssistBtn.TabIndex = 9
         Me.CallAssistBtn.Tag = "1"
         Me.CallAssistBtn.Text = "Call For Assistance"
         Me.CallAssistBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -204,10 +209,10 @@ Partial Class ControlApartment
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox5.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.back
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 335)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 558)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox5.Size = New System.Drawing.Size(56, 65)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 16
         Me.PictureBox5.TabStop = False
@@ -215,11 +220,11 @@ Partial Class ControlApartment
         'KitchenBtn
         '
         Me.KitchenBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.KitchenBtn.Location = New System.Drawing.Point(38, 247)
-        Me.KitchenBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.KitchenBtn.Location = New System.Drawing.Point(56, 471)
+        Me.KitchenBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.KitchenBtn.Name = "KitchenBtn"
-        Me.KitchenBtn.Size = New System.Drawing.Size(300, 40)
-        Me.KitchenBtn.TabIndex = 17
+        Me.KitchenBtn.Size = New System.Drawing.Size(429, 68)
+        Me.KitchenBtn.TabIndex = 7
         Me.KitchenBtn.Text = "Kitchen"
         Me.KitchenBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.KitchenBtn.UseVisualStyleBackColor = True
@@ -229,10 +234,10 @@ Partial Class ControlApartment
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox6.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.kitchen
-        Me.PictureBox6.Location = New System.Drawing.Point(-1, 247)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox6.Location = New System.Drawing.Point(1, 471)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.Size = New System.Drawing.Size(56, 66)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 16
         Me.PictureBox6.TabStop = False
@@ -244,10 +249,9 @@ Partial Class ControlApartment
         '
         Me.IncTempBtn.BackgroundImage = Global.CPS613_Project_GroupB2.My.Resources.Resources.inc
         Me.IncTempBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.IncTempBtn.Location = New System.Drawing.Point(248, 42)
-        Me.IncTempBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.IncTempBtn.Location = New System.Drawing.Point(354, 70)
         Me.IncTempBtn.Name = "IncTempBtn"
-        Me.IncTempBtn.Size = New System.Drawing.Size(46, 39)
+        Me.IncTempBtn.Size = New System.Drawing.Size(66, 65)
         Me.IncTempBtn.TabIndex = 1
         Me.IncTempBtn.UseVisualStyleBackColor = True
         '
@@ -255,10 +259,9 @@ Partial Class ControlApartment
         '
         Me.DecTempBtn.BackgroundImage = Global.CPS613_Project_GroupB2.My.Resources.Resources.dec
         Me.DecTempBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.DecTempBtn.Location = New System.Drawing.Point(293, 42)
-        Me.DecTempBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.DecTempBtn.Location = New System.Drawing.Point(419, 70)
         Me.DecTempBtn.Name = "DecTempBtn"
-        Me.DecTempBtn.Size = New System.Drawing.Size(46, 39)
+        Me.DecTempBtn.Size = New System.Drawing.Size(66, 65)
         Me.DecTempBtn.TabIndex = 2
         Me.DecTempBtn.UseVisualStyleBackColor = True
         '
@@ -267,10 +270,9 @@ Partial Class ControlApartment
         Me.TempLabel.AutoSize = True
         Me.TempLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TempLabel.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TempLabel.Location = New System.Drawing.Point(183, 49)
-        Me.TempLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TempLabel.Location = New System.Drawing.Point(261, 82)
         Me.TempLabel.Name = "TempLabel"
-        Me.TempLabel.Size = New System.Drawing.Size(34, 28)
+        Me.TempLabel.Size = New System.Drawing.Size(50, 41)
         Me.TempLabel.TabIndex = 21
         Me.TempLabel.Text = "25"
         '
@@ -280,11 +282,38 @@ Partial Class ControlApartment
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox7.Image = Global.CPS613_Project_GroupB2.My.Resources.Resources.apartment
+        Me.PictureBox7.Location = New System.Drawing.Point(-1, 265)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(56, 65)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 1001
+        Me.PictureBox7.TabStop = False
+        '
+        'AptBtn
+        '
+        Me.AptBtn.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.AptBtn.Location = New System.Drawing.Point(56, 265)
+        Me.AptBtn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.AptBtn.Name = "AptBtn"
+        Me.AptBtn.Size = New System.Drawing.Size(429, 67)
+        Me.AptBtn.TabIndex = 5
+        Me.AptBtn.Text = "Turn Apartment ON"
+        Me.AptBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AptBtn.UseVisualStyleBackColor = True
+        '
         'ControlApartment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(339, 415)
+        Me.ClientSize = New System.Drawing.Size(484, 692)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.AptBtn)
         Me.Controls.Add(Me.TempLabel)
         Me.Controls.Add(Me.DecTempBtn)
         Me.Controls.Add(Me.IncTempBtn)
@@ -303,7 +332,6 @@ Partial Class ControlApartment
         Me.Controls.Add(Me.TempBtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Title)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ControlApartment"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ControlApartment"
@@ -313,6 +341,7 @@ Partial Class ControlApartment
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -338,4 +367,6 @@ Partial Class ControlApartment
     Friend WithEvents DecTempBtn As Button
     Friend WithEvents TempLabel As Label
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents AptBtn As Button
 End Class
