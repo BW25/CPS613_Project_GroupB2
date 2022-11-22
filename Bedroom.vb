@@ -70,6 +70,7 @@
         If Not HasTicked Then
             If BlindsBtn.Text = "Blinds- (Closed)" Then
                 BlindsBtn.Text = "Blinds- (Open)"
+                doorbell.Show()
             Else
                 BlindsBtn.Text = "Blinds- (Closed)"
             End If
