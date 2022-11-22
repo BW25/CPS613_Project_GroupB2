@@ -21,7 +21,7 @@ Public Class ControlApartment
 
         'Set up buttons on this page to iterate through
         ' TODO: Change for each page
-        Buttons = {IncTempBtn, DecTempBtn, HumidityBtn, FanBtn, BedroomBtn, KitchenBtn, BackBtn, CallAssistBtn}
+        Buttons = {IncTempBtn, DecTempBtn, HumidityBtn, FanBtn, AptBtn, BedroomBtn, KitchenBtn, BackBtn, CallAssistBtn}
         SelectedButton = 0
     End Sub
 
@@ -35,7 +35,7 @@ Public Class ControlApartment
 
 
     'Check if a key has been tapped
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles IncTempBtn.KeyUp, DecTempBtn.KeyUp, HumidityBtn.KeyUp, FanBtn.KeyUp, BedroomBtn.KeyUp, KitchenBtn.KeyUp, BackBtn.KeyUp, CallAssistBtn.KeyUp
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles IncTempBtn.KeyUp, DecTempBtn.KeyUp, HumidityBtn.KeyUp, FanBtn.KeyUp, AptBtn.KeyUp, BedroomBtn.KeyUp, KitchenBtn.KeyUp, BackBtn.KeyUp, CallAssistBtn.KeyUp
         ' If the HoldTimer hasn't gone off yet and the key is raised, the button was tapped
         If Timer1.Enabled Then
             Timer1.Stop()
@@ -46,7 +46,7 @@ Public Class ControlApartment
 
     ' Handles key pushed down, starts timer to determine if it is being tapped or held
     ' TODO: Make sure all of the buttons in your form are have their KeyDown event being handled here
-    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles IncTempBtn.KeyDown, DecTempBtn.KeyDown, HumidityBtn.KeyDown, FanBtn.KeyDown, BedroomBtn.KeyDown, KitchenBtn.KeyDown, BackBtn.KeyDown, CallAssistBtn.KeyDown
+    Private Sub KeyDown(sender As Object, e As KeyEventArgs) Handles IncTempBtn.KeyDown, DecTempBtn.KeyDown, HumidityBtn.KeyDown, FanBtn.KeyDown, AptBtn.KeyDown, BedroomBtn.KeyDown, KitchenBtn.KeyDown, BackBtn.KeyDown, CallAssistBtn.KeyDown
         Timer1.Start()
     End Sub
 
@@ -113,6 +113,16 @@ Public Class ControlApartment
                 NotifyIcon1.BalloonTipTitle = "ASSISTANCE"
                 NotifyIcon1.Visible = True
                 NotifyIcon1.ShowBalloonTip(0)
+            End If
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles AptBtn.Click
+        If Not HasTicked Then
+            If AptBtn.Text = "Turn Apartment ON" Then
+                AptBtn.Text = "Turn Apartment OFF"
+            Else
+                AptBtn.Text = "Turn Apartment ON"
             End If
         End If
     End Sub
